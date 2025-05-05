@@ -1,0 +1,269 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  font-family: 'Raleway';
+}
+
+body, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url(Web-Page-Background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Raleway';
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+#form-icon-div {
+  display: flex;
+  justify-content: center;
+}
+
+#form-icon {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 4rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 0.6rem;
+  background: #5c80b242;
+  color: #fff;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+::placeholder {
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+/* Container */
+.container {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#search-countries-icon {
+  color: #fff;
+}
+
+/* listado */
+
+.country-profile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.country-profile-flag {
+  width: 10rem;
+  box-shadow:  0 1rem 1rem rgba(2, 20, 78, 0.288);
+  transition: all 0.5s ease-in-out;
+}
+
+.country-propfile-name {
+  margin: 0.3rem;
+  color: #FFFFFF;
+}
+
+
+/* Pais encontrado */ 
+.country-finded {
+  background-color: #060c448f;
+  border-radius: 1rem;
+  box-shadow:  0 1rem 1rem rgba(2, 20, 78, 0.267);
+  width: 90%;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+
+#country-flag-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+#country-flag {
+  width: 9rem;
+  height: inherit;
+  padding: 0.5rem;
+}
+
+#principal-data {
+  display: flex;
+  flex-direction: row;
+}
+
+#Data-country {
+  padding: 0.5rem;
+  color: #FFFFFF;
+}
+
+#country-name {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.3rem
+}
+
+#icon-country-finded {
+  color: #fff;
+}
+
+/* Clima del pais encontrado*/
+#country-finded-weather {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #6d7ab68a;
+  box-shadow: inset  0px 0px 15px rgba(34, 38, 77, 0.918);
+  margin: 0.3rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+#weather-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#weather-temp, #weather-descrp {
+  color: #FFFFFF;
+  font-weight: 300;
+  font-weight: 1rem;
+  margin: 1rem;
+}
+
+#weather-icon-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#weather-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: inherit;
+  background-color: #939ec2;
+  border-radius: 100%;
+}
+
+/* Texto de error en el filtrado */
+.error-div{
+  background: rgba(237, 247, 255, 0.315);
+  box-shadow:  0 0.5rem 0.5rem rgba(2, 20, 78, 0.13);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.error-text {
+  text-align: center;
+  color: #060c44;
+  padding: 0.5rem;
+}
+
+#error-icon {
+  color: #060c44;
+}
+
+
+
+/* Adaptaciones reponsivas */
+@media (min-width: 768px) {
+
+  .country-finded {
+    width: 60%;
+  }
+
+  #principal-data {
+    justify-content: space-evenly;
+  }
+
+  #country-flag {
+    width: 15rem;
+    height: inherit;
+    border-radius: 1.5rem;
+  }
+
+  #Data-country {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .country-data {
+    margin: 0.1rem;
+  }
+}
+
