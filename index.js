@@ -105,14 +105,13 @@ searchInput.addEventListener('input', async e => {
         </div>
         <div id="Data-country">
         <p id="country-name">${similarCountries.name.common}</p>
-        <p class="country-data">Nombre oficial: ${similarCountries.translations.spa.official}</p>
         <p class="country-data">Capital: ${similarCountries.capital}</p>
         <p class="country-data">Poblacion: ${similarCountries.population}</p>
         <p class="country-data">Region: ${similarCountries.region}</p>
         <p class="country-data">Temperatura: ${similarCountries.timezones}</p>
         </div>
         <div id="icon-country-div">
-        <span class="material-symbols-outlined" id="icon-country-finded">globe_location_pin</span>
+        <span class="material-symbols-outlined" id="icon-country-finded">info</span>
         </div>
         </div>
         <div id="country-finded-weather">
