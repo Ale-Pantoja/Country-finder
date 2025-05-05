@@ -20,7 +20,7 @@ p {
 
 body {
   height: 100vh;
-  background-image: url(Web-Page-Background.png);
+  background-image: url(Images/background.png);
   background-position: center;
   background-size: cover;
 }
@@ -45,6 +45,7 @@ img {
 .title {
   font-family: 'Raleway';
   font-weight: 300;
+  font-size: 2.3rem;
   text-align: center;
   color: #FFFFFF;
   margin: 1rem;
@@ -59,27 +60,37 @@ img {
 #form-icon {
   margin-top: 1rem;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
 }
+
 
 form {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  background: #060c4460;
+  border-radius: 1rem;
 }
 
 input {
   margin: 0.5rem;
-  padding: 0.6rem;
-  background: #060c4460;
+  padding: 0.2rem;
+  background: transparent;
   color: #fff;
-  border-radius: 0.5rem;
   width: 100%;
 }
 
-::placeholder {
-  color: #fff;
+#input-icon {
+  color: #bdd4ff;
+  font-size: 1.5rem;
   font-weight: 200;
+  margin: 0.5rem;
+  padding: 0.2rem;
+} 
+
+::placeholder {
+  color: #bdd4ff;
+  font-weight: 250;
   font-size: 0.9rem;
 }
 
@@ -98,19 +109,17 @@ input {
 }
 
 /* listado */
-
 .country-profile {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  margin: 0.3rem;
   transition: all 0.5s ease-in-out;
 }
 
 .country-profile-flag {
-  width: 10rem;
+  width: 8rem;
   box-shadow:  0 1rem 1rem rgba(2, 20, 78, 0.288);
   transition: all 0.5s ease-in-out;
 }
@@ -159,8 +168,10 @@ input {
 #country-name {
   display: flex;
   justify-content: center;
-  font-weight: 500;
+  align-items: center;
+  font-weight: 600;
   font-size: 1.2rem;
+  color: #bdd4ff;
   padding: 0.3rem
 }
 
@@ -210,21 +221,22 @@ input {
 
 /* Texto de error en el filtrado */
 .error-div{
-  background: rgba(237, 247, 255, 0.315);
-  box-shadow:  0 0.5rem 0.5rem rgba(2, 20, 78, 0.13);
+  background: rgba(220, 227, 255, 0.39);
+  box-shadow:  0 0.5rem 0.5rem rgba(0, 60, 255, 0.137);
   backdrop-filter: blur(10px);
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   transition: all 0.4s ease-in-out;
 }
 
 .error-text {
   text-align: center;
   color: #060c44;
+  font-weight: 500;
   padding: 0.5rem;
 }
 
@@ -239,10 +251,11 @@ input {
 
   .country-finded {
     width: 60%;
+    transition: all 0.5s ease-in-out;
   }
 
   #principal-data {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   #country-flag {
@@ -262,3 +275,8 @@ input {
   }
 }
 
+@media (min-weigth: 1420px) {
+  #principal-data {
+    justify-content: space-around;
+  }
+}
