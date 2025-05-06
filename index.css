@@ -73,10 +73,14 @@ form {
 }
 
 input {
+  display: flex;
+  justify-content: center;
   margin: 0.5rem;
   padding: 0.2rem;
   background: transparent;
   color: #fff;
+  border-radius: 1.5rem;
+  outline: none;
   width: 100%;
 }
 
@@ -120,11 +124,11 @@ input {
 
 .country-profile-flag {
   width: 8rem;
-  box-shadow:  0 1rem 1rem rgba(2, 20, 78, 0.288);
+  box-shadow:  0 1rem 1rem rgba(62, 88, 172, 0.288);
   transition: all 0.5s ease-in-out;
 }
 
-.country-propfile-name {
+.country-profile-name {
   margin: 0.3rem;
   color: #FFFFFF;
 }
@@ -134,7 +138,7 @@ input {
 .country-finded {
   background-color: #060c448f;
   border-radius: 1rem;
-  box-shadow:  0 1rem 1rem rgba(2, 20, 78, 0.267);
+  box-shadow:  0 1rem 1rem rgba(0, 7, 34, 0.288);
   width: 90%;
   padding: 0.5rem;
   margin: 1rem auto;
@@ -158,11 +162,18 @@ input {
 #principal-data {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
-#Data-country {
+#data-country {
   padding: 0.5rem;
   color: #FFFFFF;
+  word-break: break-word;
+  max-width: 50%;
+}
+
+.data-country-text {
+  font-size: 0.9rem;
 }
 
 #country-name {
@@ -176,7 +187,7 @@ input {
 }
 
 #icon-country-finded {
-  color: #fff;
+  color: #bdd4ff77;
 }
 
 /* Clima del pais encontrado*/
@@ -251,27 +262,25 @@ input {
 @media (min-width: 768px) {
 
   .country-finded {
-    width: 60%;
+    width: 50%;
     transition: all 0.5s ease-in-out;
   }
 
-  #principal-data {
-    justify-content: space-around;
-  }
 
   #country-flag {
-    width: 15rem;
+    min-width: 13rem;
+    max-width: 15rem;
     height: inherit;
     border-radius: 1.5rem;
   }
 
-  #Data-country {
+  #data-country {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
 
-  .country-data {
+  .data-country-text {
     margin: 0.1rem;
   }
 }

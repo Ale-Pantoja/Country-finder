@@ -86,7 +86,7 @@ searchInput.addEventListener('input', async e => {
       li.classList.add('country-profile');
       const countryProfile = `
           <img src="${similarCountries.flags.svg}" alt="${similarCountries.flags.alt}" class="country-profile-flag">
-          <p class="country-propfile-name">${similarCountries.name.common}</p>
+          <p class="country-profile-name">${similarCountries.name.common}</p>
       `;
       const liChildren = `
       ${countryProfile}
@@ -103,12 +103,12 @@ searchInput.addEventListener('input', async e => {
         <div id="country-flag-div">
         <img src="${similarCountries.flags.svg}" alt="${similarCountries.flags.alt}" id="country-flag">
         </div>
-        <div id="Data-country">
+        <div id="data-country">
         <p id="country-name">${similarCountries.name.common}</p>
-        <p class="country-data">Capital: ${similarCountries.capital}</p>
-        <p class="country-data">Poblacion: ${similarCountries.population}</p>
-        <p class="country-data">Region: ${similarCountries.region}</p>
-        <p class="country-data">Temperatura: ${similarCountries.timezones}</p>
+        <p class="data-country-text">Capital: ${similarCountries.capital}</p>
+        <p class="data-country-text">Poblacion: ${similarCountries.population}</p>
+        <p class="data-country-text">Region: ${similarCountries.region}</p>
+        <p class="data-country-text">Temperatura: ${similarCountries.timezones}</p>
         </div>
         <div id="icon-country-div">
         <span class="material-symbols-outlined" id="icon-country-finded">info</span>
